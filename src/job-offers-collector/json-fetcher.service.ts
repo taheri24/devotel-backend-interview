@@ -21,7 +21,7 @@ export class JsonFetcherService {
             return (await response.json()) as T;
 
         } catch (error) {
-            console.error('Error fetching jobs from provider 1:', error);
+            console.error('Error fetching jobs from provider ', error);
             throw error;
         }
     }

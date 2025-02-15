@@ -69,18 +69,11 @@ describe('SourceB', () => {
         ref: 'job-408',
         title: 'Frontend Developer',
         location: 'Seattle',
-        salaryRange: JSON.stringify({
-          min: 58000,
-          max: 81000,
-          currency: 'USD',
-        }),
+        salaryRange: "$58000 - $81000" ,        
         postedDate: '2025-02-06',
         company: 'BackEnd Solutions',
-        industry: 'X',
-        skills: JSON.stringify({
-          experience: 5,
-          technologies: ['HTML', 'CSS', 'Vue.js'],
-        }),
+        skills: "HTML, CSS, Vue.js" ,
+        source: 'SourceB',
       } as JobOffer,
     ]);
   });
