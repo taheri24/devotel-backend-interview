@@ -18,7 +18,6 @@ export class JobOffersController {
         @Res() res: Response): Promise<void> {
         take = take || 10;
         const [list, count] = await this.jobOffersService.getJobsWithPaginate(skip, take);
-        console.log('list:', list, 'count:', count);
         res.setHeader('X-Total-Count', count);
         res.json(list);
     }
